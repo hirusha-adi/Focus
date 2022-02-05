@@ -1,6 +1,5 @@
 __AUTHOR__ = "@hirusha-adi"
 __VERSION__ = "v1.0"
-__LICENSE__ = "MIT LICENSE"
 
 import os
 
