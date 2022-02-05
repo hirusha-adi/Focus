@@ -5,6 +5,7 @@ __LICENSE__ = "MIT LICENSE"
 import os
 import sys
 import platform
+import time
 
 __LOGO__ = r"""
  _____                    
@@ -209,8 +210,11 @@ def main():
         __CODE_MID__.format(HOSTS_FILE=HOSTS_FILE, REDIRECT_URL=REDIRECT_URL,
                             START_TIME=start_time, END_TIME=end_time) + __CODE_END__
 
-    with open(os.path.join(os.getcwd(), "focus.py"), "w", encoding="utf-8") as codefile:
+    with open(os.path.join(os.getcwd(), "focus.pyw"), "w", encoding="utf-8") as codefile:
         codefile.write(FINAL)
+
+    print("Made file 'blacklist.txt' and 'focus.pyw'")
+    input("Press Enter to Exit...")
 
 
 main()
