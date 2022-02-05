@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+# Focus
 
-You can use the [editor on GitHub](https://github.com/hirusha-adi/Focus/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Focus while doing work or studies for a specified period of time
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# How does this work?
 
-### Markdown
+This script will edit the hosts file of your computer blocking access from a list of websites.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The computer file hosts is an operating system file that maps hostnames to IP addresses. It is a plain text file.
 
-```markdown
-Syntax highlighted code block
+[Click here](<https://en.wikipedia.org/wiki/Hosts_(file)>) to learn more about the hosts file of an operating system
 
-# Header 1
-## Header 2
-### Header 3
+# Usage
 
-- Bulleted
-- List
+## Arch Linux
 
-1. Numbered
-2. List
+run the commands below, line by line
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+sudo pacman -Syyuu --noconfirm
+sudo pacman -S git python python-pip --noconfirm
+cd ~
+git clone https://github.com/hirusha-adi/Focus.git
+cd Focus
+python3 maker.py # start the maker
+pyhton3 focus.pyw # start the file generated from the maker.py
+# CTRL + Z
+# bg
+# disown -h
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Ubuntu/Debian
 
-### Jekyll Themes
+run the commands below, line by line
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hirusha-adi/Focus/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+sudo apt install && sudo apt upgrade -y
+sudo apt install git python3 python3-pip -y
+cd ~
+git clone https://github.com/hirusha-adi/Focus.git
+cd Focus
+python3 maker.py # start the maker
+pyhton3 focus.pyw # start the file generated from the maker.py
+# CTRL + Z
+# bg
+# disown -h
+```
 
-### Support or Contact
+## Windows
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. Download and install Python3. Make sure to 'Add to PATH' when install python3
+
+![image1](https://www.tutorials24x7.com/uploads/2019-12-26/files/3-tutorials24x7-python-windows-install.png)
+
+2. Download the code as a .zip file from this [Github Reposotory of Focus](https://github.com/hirusha-adi/Focus)
+
+![image2](https://cdn.discordapp.com/attachments/935515175073763398/937186561299197952/unknown.png)
+
+(this above image might not be the same)
+
+3. Extract the downloaded `.zip` file
+4. open `cmd` in that folder
+5. run `python maker.py` to start the maker
+6. Right click and click on run as administrator on the `focus.pyw` file to start the program
+
+# Special Thanks to:
+
+1. Oshada (`OkSheBroken#7960`) for compiling this script with `pyinstaller` for Windows10x64
