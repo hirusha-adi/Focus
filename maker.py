@@ -3,9 +3,6 @@ __VERSION__ = "v1.0"
 __LICENSE__ = "MIT LICENSE"
 
 import os
-import sys
-import platform
-import time
 
 __LOGO__ = r"""
  _____                    
